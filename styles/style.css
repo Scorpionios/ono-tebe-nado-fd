@@ -6,7 +6,7 @@
     /*Через грид контейнер делаю 12 колонок, чтобы распределить элементы*/
 
     display: grid;
-    grid-template-columns: 5fr 4fr 3fr;
+    grid-template-columns: 1fr min-content 1fr;
     align-items:center;
     grid-template-rows: 293px;
 }
@@ -15,11 +15,10 @@
 
     /*добавляю из макета точно такое же обозначение как в макете*/
 
-    margin: 0 35px 0 50px;
     display: flex;
-    justify-content: space-around;
-    list-style-position: inside;
+    gap: 33px;
     list-style-image: url("./image/list_marker.svg");
+    margin-left: 50px;
 }
 
 .menu_header_main {
@@ -43,11 +42,15 @@
     color: #000;
 }
 
+.header_p {
+    font-size: 18px;
+}
+
 .logo_header {
 
     /*выравнивание по центру*/
 
-    justify-items: center;
+    justify-self: center;
 }
 
 .address {
@@ -56,10 +59,13 @@
 
     list-style: none;
     font-style: normal;
+    align-items: flex-start;
 }
 
 .address_header {
-    margin-right: 60px;
+    justify-self: end;
+    width: 240px;
+    margin-right: 50px;
 }
 
 /*1 сектор*/
@@ -72,7 +78,7 @@
     display: flex;
     flex-direction: column;
     height: 757px;
-    margin-bottom: 200px;
+    margin-bottom: 180px;
     background-image: url(./image/flower.jpg);
     background-position: center;
     overflow: hidden;
@@ -106,12 +112,11 @@ h1 {
 }
 
 .title_2word {
-   text-align: center;
+   margin: 17px auto 18px 380.5px;
 }
 
 .title_3word {
-    text-align: end;
-    margin-right: 50px;
+    margin: 0px auto auto 664px;
 }
 
 .description {
@@ -128,7 +133,7 @@ h1 {
 .description_p {
     font-size: 22px;
     text-transform: uppercase;
-    word-spacing: 0.9em;
+    word-spacing: 0.85em;
 }
 
 button {
@@ -149,7 +154,7 @@ button {
     /*флекс контейнер с коллонным расположением элементов*/
 
     height: 723px;
-    margin: 0 24px 200px 24px;
+    margin: 0 24px 120px 24px;
     display: flex;
     flex-direction: column;
 }
@@ -246,7 +251,7 @@ h2 {
     /*грид контейнер с 4 колонками*/
 
     height: 595px;
-    margin: 0 24px 200px 24px;
+    margin: 0 24px 183px 24px;
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
@@ -256,17 +261,17 @@ h2 {
 }
 
 .about_text {
-    width: 693px;
+    width: 690px;
     position: absolute;
-    margin: 133px 0 auto 359px;
+    margin: 136px 0 auto 359px;
 }
 
 .about_title {
-    margin-bottom: 110px;
+    margin-bottom: 100px;
 }
 
 .about_first_paragrath {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 /*подвал сайта*/
@@ -276,23 +281,27 @@ h2 {
     /*грид контейнер с 10 колонками*/
 
     display: grid;
-    grid-template-columns: 2fr 5fr 3fr;
+    grid-template-columns: 1fr 4fr min-content;
     grid-template-rows: 180px;
 }
 
 .address_footer {
     width: 264px;
     margin-left: 50px;
+    letter-spacing: 0.06em;
+    gap: 5px;
 }
 
 .menu_footer {
     list-style: none;
-    justify-items: center;
+    text-align: center;
+    margin-left: -23px;
+    letter-spacing: 0.08em;
 }
 
 .socials {
     margin-right: 50px;
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    gap: 48px;
 }
