@@ -1,1 +1,297 @@
-/* место для вашего кода */
+
+/*Шапка*/
+
+.header {
+
+    /*Через грид контейнер делаю 12 колонок, чтобы распределить элементы*/
+
+    display: grid;
+    grid-template-columns: 5fr 4fr 3fr;
+    align-items:center;
+    grid-template-rows: 293px;
+}
+
+.menu_header {
+
+    /*добавляю из макета точно такое же обозначение как в макете*/
+
+    margin: 0 35px 0 50px;
+    display: flex;
+    justify-content: space-around;
+    list-style-position: inside;
+    list-style-image: url("./image/list_marker.svg");
+}
+
+.menu_header_main {
+
+    /*убераю у первого элемента маркер*/
+
+    list-style: none;
+}
+
+.menu_main_a {
+
+    /*убираю подчёркивание у первого элемента*/
+
+    text-decoration: none;
+}
+
+.menu_a:visited {
+
+    /*делаю точно такой же цвет, который и был до нажатия на ссылку*/
+
+    color: #000;
+}
+
+.logo_header {
+
+    /*выравнивание по центру*/
+
+    justify-items: center;
+}
+
+.address {
+
+    /*убираю маркеры и нормальное написание текста*/
+
+    list-style: none;
+    font-style: normal;
+}
+
+.address_header {
+    margin-right: 60px;
+}
+
+/*1 сектор*/
+
+.cover {
+
+    /*флекс контейнер и его в колоннки.
+    фоновое изображение, центрирую, всё, что выходит за границы скрываю*/
+
+    display: flex;
+    flex-direction: column;
+    height: 757px;
+    margin-bottom: 200px;
+    background-image: url(./image/flower.jpg);
+    background-position: center;
+    overflow: hidden;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.cover::before {
+
+    /*фон для затемнения*/
+
+    content: "";
+    width: 1100px;
+    height: 757px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    margin-top: 0; 
+    left: 0;
+}
+
+h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 30%;
+    z-index: 2;
+}
+
+.title_1word {
+    margin: 165px 0 0 50px;
+}
+
+.title_2word {
+   text-align: center;
+}
+
+.title_3word {
+    text-align: end;
+}
+
+.description {
+
+    /*дфлекс контейнер, в котором два элемента друг за другом по горизонтали*/
+    
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin: auto 50px 50px 50px;
+    z-index: 2;
+}
+
+.description_p {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0%;
+    word-spacing: 90%;
+}
+
+button {
+    width: 256px;
+    height: 51px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 22px;
+    background-color: transparent;
+    border: #FFFFFF 1px solid;
+    outline: none;
+}
+
+/*2 сектор*/
+
+.lots {
+
+    /*флекс контейнер с коллонным расположением элементов*/
+
+    height: 723px;
+    margin: 0 24px 200px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.lots_title {
+    margin-left: 40px;
+}
+
+.lots_cards {
+
+    /*флекс контейнер с карточками, расположенными по горизонтали*/
+
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.card {
+
+    /*настройка карточки*/
+
+    width: 334px;
+    height: 596px;
+    margin-top: 27px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card::before {
+
+    /*затемнение*/
+
+    content: "";
+    z-index: 1;
+    width: 334px;
+    height: 596px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    margin-top: 0; 
+    left: 0;
+}
+
+.card_title {
+    z-index: 2;
+    margin: 48px 40px auto 40px;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.card_text {
+    z-index: 2;
+    margin: auto 40px 48px 40px;
+}
+
+/*для каждой карточки своё фоновое изображение*/
+
+.card_film {
+    background-image: url(./image/film.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.card_book {
+    background-image: url(./image/book.png);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.card_picture {
+    background-image: url(./image/idontknow.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.lots_more {
+    font-size: 20px;
+    margin: auto auto 0px 40px;
+}
+
+/*3 сектор*/
+
+.about {
+
+    /*грид контейнер с 4 колонками*/
+
+    height: 595px;
+    margin: 0 24px 200px 24px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.about_logo {
+    margin: 35px auto auto 47px;
+}
+
+.about_text {
+    width: 693px;
+    position: absolute;
+    margin: 133px 0 auto 359px;
+}
+
+.about_title {
+    margin-bottom: 110px;
+}
+
+.about_first_paragrath {
+    margin-bottom: 30px;
+}
+
+/*подвал сайта*/
+
+.footer {
+
+    /*грид контейнер с 10 колонками*/
+
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr;
+    grid-template-rows: 180px;
+}
+
+.address_footer {
+    width: 264px;
+    margin-left: 50px;
+}
+
+.menu_footer {
+    list-style: none;
+    justify-items: center;
+}
+
+.socials {
+    margin-right: 50px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
