@@ -96,12 +96,13 @@
 h1 {
     font-size: 100px;
     text-transform: uppercase;
-    letter-spacing: 30%;
+    letter-spacing: 0.3em;
     z-index: 2;
+    margin: 0 50px 0 50px;
 }
 
 .title_1word {
-    margin: 165px 0 0 50px;
+    margin-top: 165px;
 }
 
 .title_2word {
@@ -110,6 +111,7 @@ h1 {
 
 .title_3word {
     text-align: end;
+    margin-right: 50px;
 }
 
 .description {
@@ -126,8 +128,7 @@ h1 {
 .description_p {
     font-size: 22px;
     text-transform: uppercase;
-    letter-spacing: 0%;
-    word-spacing: 90%;
+    word-spacing: 0.9em;
 }
 
 button {
