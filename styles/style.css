@@ -8,8 +8,8 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items:center;
-    grid-template-rows: 293px;
-    font-size: 18px;
+    font-size: 1.13em;
+    margin: 92px auto 92px 3px;
 }
 
 .menu_header {
@@ -19,7 +19,7 @@
     display: flex;
     gap: 33px;
     list-style-image: url("./image/list_marker.svg");
-    margin-left: 50px;
+    margin-left: 47px;
 }
 
 .menu_header_main {
@@ -74,7 +74,6 @@
 
     display: flex;
     flex-direction: column;
-    height: 757px;
     margin-bottom: 180px;
     background-image: url(./image/flower.jpg);
     background-position: center;
@@ -95,7 +94,7 @@
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 6.25em;
     text-transform: uppercase;
     letter-spacing: 0.3em;
     z-index: 2;
@@ -127,12 +126,12 @@ h1 {
     display: flex;
     align-items:center;
     justify-content: space-between;
-    margin: auto 50px 50px 50px;
+    margin: 106px 50px 50px 50px;
     z-index: 2;
 }
 
 .description_p {
-    font-size: 22px;
+    font-size: 1.372em;
     text-transform: uppercase;
     word-spacing: 0.85em;
 }
@@ -161,7 +160,7 @@ button {
 
 h2 {
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 2.5em;
 }
 
 .lots_title {
@@ -183,7 +182,7 @@ h2 {
     /*настройка карточки*/
 
     width: 334px;
-    height: 596px;
+    min-height: 596px;
     margin-top: 27px;
     color: #FFFFFF;
     display: flex;
@@ -210,7 +209,7 @@ h2 {
     z-index: 2;
     margin: 48px 40px auto 40px;
     text-transform: uppercase;
-    font-size: 22px;
+    font-size: 1.372em;
 }
 
 .card_text {
@@ -253,9 +252,7 @@ h2 {
 }
 
 .about_text {
-    width: 690px;
-    margin-top: 135px;
-    margin-left: 72px;
+    margin: 135px 3px auto 72px;
 }
 
 .about_title {
@@ -275,7 +272,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 4fr min-content;
     grid-template-rows: 180px;
-    font-size: 18px;
+    font-size: 1.13em;
 }
 
 .address_footer {
