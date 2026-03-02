@@ -9,16 +9,6 @@
         
         <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
 
-        <!--Подключаю шрифт с сайта google-->
-
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
-        
-        <link rel="icon" href="./styles/image/logo.svg"/>
-
         <!--подключаю стили-->
 
         <link rel="stylesheet" href="./fonts/fonts.css"/>
@@ -30,6 +20,8 @@
     </head>
 
     <body>
+    
+        <!-- Проценты не использовал, так как через открытие через Яндекс, почему-то он не читает проценты -->
 
         <!--Шапка-->
         
@@ -41,25 +33,19 @@
                 <ul class="menu_header">
                     <li class="menu_header_main">
                         <a class="menu_main_a menu_a" href="#">
-                            <p class="header_p">
-                                главная
-                            </p>
+                            главная
                         </a>
                     </li>
 
                     <li>
                         <a class="menu_a" href="#">
-                            <p class="header_p">
-                                посмотреть лоты
-                            </p>
+                            посмотреть лоты
                         </a>
                     </li>
 
                     <li>
                         <a class="menu_a" href="#">
-                            <p class="header_p">
-                                об аукционе
-                            </p>
+                            об аукционе
                         </a>
                     </li>
                 </ul>
@@ -68,7 +54,7 @@
             <!--Логотип-->
 
             <a class="logo_header">
-                <img src="./styles/image/logo.png" alt="логотип">
+                <img src="./styles/image/logoheader.svg" alt="логотип">
             </a>
 
             <!--Адресс-->
@@ -77,24 +63,18 @@
                 <ul class="address address_header">
                     <li>
                         <a class="menu_a" href="tel:+99995555555">
-                            <p class="header_p">
-                                +9 999 555 5555
-                            </p>
+                            +9 999 555 5555
                         </a>
                     </li>
 
                     <li>
                         <a class="menu_a" href="mailto:info@sobaka.ge">
-                            <p class="header_p">
-                                info@sobaka.ge
-                            </p>
+                            info@sobaka.ge
                         </a>
                     </li>
 
                     <li>
-                        <p class="header_p">
-                                наб. Принсенграхт 263- 265, Амстердам
-                            </p>
+                        наб. Принсенграхт 263- 265, Амстердам
                     </li>
                 </ul>
             </address>
@@ -107,16 +87,18 @@
             <!--Первая часть основного контента-->
             
             <section class="cover">
-                <h1 class="title_1word">
-                    Оно
-                </h1>
+                <h1 class="cover_title">
+                    <span>
+                        Оно
+                    </span>
 
-                 <h1 class="title_2word">
-                    тебе
-                </h1>
+                    <span class="title_word_tebe">
+                        тебе
+                    </span>
 
-                 <h1 class="title_3word">
-                    надо
+                    <span class="title_word_nado">
+                        надо
+                    </span>
                 </h1>
 
                 <div class="description">
@@ -124,7 +106,7 @@
                         Аукцион вещей, в которые никто не верил
                     </p>
 
-                    <button>
+                    <button type="button">
                         Сделать ставку
                     </button>
                 </div>
@@ -141,34 +123,39 @@
 
                 <ul class="lots_cards">
                     <li>
-                        <article class="card card_film">
-                            <h3 class="card_title">
-                                <a href="#">
-                                    Фильм режиссёра, который бросил киношколу
-                                </a>
-                            </h3>
+                        <a>
+                            <article class="card card_film">
+                                <h3 class="card_title">
+                                    <a href="#">
+                                        Фильм режиссёра, который бросил киношколу
+                                    </a>
+                                </h3>
 
-                            <p class="card_text">
-                               Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-                            </p>
-                        </article>
+                                <p class="card_text">
+                                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                                </p>
+                            </article>
+                        </a>
                     </li>
 
                     <li>
-                        <article class="card card_book">
-                            <h3 class="card_title">
-                                <a href="#">
-                                    Книга, где описан один скучный день из жизни рекламного агента
-                                </a>
-                            </h3>
+                        <a>
+                            <article class="card card_book">
+                                <h3 class="card_title">
+                                    <a href="#">
+                                        Книга, где описан один скучный день из жизни рекламного агента
+                                    </a>
+                               </h3>
 
-                            <p class="card_text">
-                                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
-                            </p>
-                        </article>
+                                <p class="card_text">
+                                    Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+                                </p>
+                            </article>
+                        </a>
                     </li>
 
                     <li>
+                        <a>
                             <article class="card card_picture">
                                 <h3 class="card_title">
                                     <a href="#">
@@ -180,6 +167,7 @@
                                    Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
                                 </p>
                             </article>
+                        </a>
                     </li>
                 </ul>
 
@@ -201,7 +189,7 @@
                     </h2>
 
                     <div>
-                        <p class="about_first_paragrath">
+                        <p class="about_paragrath">
                             Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
                         </p>
 
@@ -245,7 +233,7 @@
             <nav>
                 <ul class="menu_footer">
                     <li>
-                        <a class="menu_main_a" href="#">
+                        <a class="menu_a menu_main_a" href="#">
                             главная
                         </a>
                     </li>

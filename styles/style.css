@@ -3,12 +3,13 @@
 
 .header {
 
-    /*Через грид контейнер делаю 12 колонок, чтобы распределить элементы*/
+    /*грид контейнер, чтобы распределить элементы*/
 
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items:center;
     grid-template-rows: 293px;
+    font-size: 18px;
 }
 
 .menu_header {
@@ -40,10 +41,6 @@
     /*делаю точно такой же цвет, который и был до нажатия на ссылку*/
 
     color: #000;
-}
-
-.header_p {
-    font-size: 18px;
 }
 
 .logo_header {
@@ -103,23 +100,29 @@ h1 {
     letter-spacing: 0.3em;
     z-index: 2;
     margin: 0 50px 0 50px;
+    display: flex;
+    flex-direction: column;
 }
 
-.title_1word {
+.cover_title {
     margin-top: 165px;
 }
 
-.title_2word {
-   margin: 17px auto 18px 380.5px;
+.title_word_tebe {
+    align-self: center;
+    margin-left: 30px;
+    margin-top: 17px
 }
 
-.title_3word {
-    margin: 0px auto auto 664px;
+.title_word_nado {
+    align-self: end;
+    margin-top: 17px;
+    margin-right: -30px;
 }
 
 .description {
 
-    /*дфлекс контейнер, в котором два элемента друг за другом по горизонтали*/
+    /*флекс контейнер, в котором два элемента друг за другом по горизонтали*/
     
     display: flex;
     align-items:center;
@@ -151,7 +154,6 @@ button {
 
     /*флекс контейнер с коллонным расположением элементов*/
 
-    height: 723px;
     margin: 0 24px 120px 24px;
     display: flex;
     flex-direction: column;
@@ -173,6 +175,7 @@ h2 {
     display: flex;
     list-style: none;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -186,6 +189,9 @@ h2 {
     display: flex;
     flex-direction: column;
     position: relative;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
 }
 
 .card::before {
@@ -216,28 +222,19 @@ h2 {
 
 .card_film {
     background-image: url(./image/film.jpg);
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
 }
 
 .card_book {
     background-image: url(./image/book.png);
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
 }
 
 .card_picture {
     background-image: url(./image/idontknow.jpg);
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
 }
 
 .lots_more {
     font-size: 20px;
-    margin: auto auto 0px 40px;
+    margin: 30px auto 0px 40px;
 }
 
 /*3 сектор*/
@@ -246,8 +243,7 @@ h2 {
 
     /*грид контейнер с 4 колонками*/
 
-    height: 595px;
-    margin: 0 24px 183px 24px;
+    margin: 0 24px 181px 24px;
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
@@ -258,15 +254,15 @@ h2 {
 
 .about_text {
     width: 690px;
-    position: absolute;
-    margin: 136px 0 auto 359px;
+    margin-top: 135px;
+    margin-left: 72px;
 }
 
 .about_title {
     margin-bottom: 100px;
 }
 
-.about_first_paragrath {
+.about_paragrath {
     margin-bottom: 24px;
 }
 
@@ -279,12 +275,12 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 4fr min-content;
     grid-template-rows: 180px;
+    font-size: 18px;
 }
 
 .address_footer {
     width: 264px;
     margin-left: 50px;
-    letter-spacing: 0.06em;
     gap: 5px;
 }
 
@@ -292,7 +288,6 @@ h2 {
     list-style: none;
     text-align: center;
     margin-left: -23px;
-    letter-spacing: 0.08em;
 }
 
 .socials {
